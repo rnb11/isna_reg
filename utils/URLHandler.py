@@ -32,3 +32,12 @@ class URLHandler:
         if self.is_test:
             return "https://keycloak-isna." + self.base_url + ".kz/auth/realms/jhipster/protocol/openid-connect/token"
         return "https://keycloak-arm." + self.base_url + ".kz/auth/realms/jhipster/protocol/openid-connect/token"
+
+    def is_test(self):
+        return self.is_test
+
+    def get_db_config(self):
+        return self.db_config
+
+    def get_base_url(self):
+        return self.base_url
